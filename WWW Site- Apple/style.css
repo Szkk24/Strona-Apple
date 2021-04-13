@@ -167,6 +167,22 @@ nav a:hover::before
     animation: drop 1.5s ease;
 }
 
+
+.regulamin{
+
+background: #f1f2f6;
+background-size: cover;
+font-family: 'Arial';
+color: black;
+margin: 0;
+    
+    width: 90%;
+    margin: auto;
+  
+    
+}
+
+
 @keyframes drop {
     0%{
         opacity: 0;
