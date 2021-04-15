@@ -1,218 +1,184 @@
-body
-{
-	background: #f1f2f6;
-	background-size: cover;
-	font-family: 'Arial';
-	color: black;
-    margin: 0;
+body {
+  background: #f1f2f6;
+  background-size: cover;
+  font-family: "Arial";
+  color: black;
+  margin: 0;
 }
-.container
-{
-    width: 80%;
-    margin: 0 auto;
-    height: 105px;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 105px;
 }
-header
-{
-    background-color: #a4b0be;
+header {
+  background-color: #ced6e0;
 }
-header::after
-{
-    content: '';
-    display: table;
-    clear: both;
+header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.LogoNawigacja
-{
-    float: left;
-    width: 60px;
-    height: 77px;
-    padding-top: 10px;
-    margin-left: -150px;
+.LogoNawigacja {
+  float: left;
+  width: 60px;
+  height: 77px;
+  padding-top: 10px;
+  margin-left: -150px;
 }
-nav
-{
-    float: right;
+nav {
+  float: right;
 }
-nav ul
-{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-nav li
-{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 40px;
-    position: relative;
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 40px;
+  position: relative;
 }
-nav a
-{
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-nav a:hover
-{
-    color: #000;
+nav a:hover {
+  color: #000;
 }
-nav a::before
-{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 0%;
-    background-color: #444;
-    
-    transition: all ease-in-out 250ms;
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #444;
+
+  transition: all ease-in-out 250ms;
 }
-nav a:hover::before
-{
-    width: 100%;
+nav a:hover::before {
+  width: 100%;
 }
-.tytul
-{
-    font-size: 20px;
-    text-align: center;
-    float: left;
-    padding-top: 25px;
-    font-family: 'fantasy';
-    font-weight: 900;
-    color: #2f3542;
+.tytul {
+  font-size: 20px;
+  text-align: center;
+  float: left;
+  padding-top: 25px;
+  font-family: "fantasy";
+  font-weight: 900;
+  color: #2f3542;
 }
-.baner
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+.baner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.presentation
-{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 80vh;
-    align-items: center;
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
 }
-.introduction
-{
-    flex: 1;
+.introduction {
+  flex: 1;
 }
-.intro-text h1
-{
-    font-size: 44px;
-    font-weight: 500;
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
 }
-.iphoneText
-{
-    margin-top: 5px;
-    font-size: 22px;
-    color: #585772;
+.iphoneText {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
 }
-.cta
-{
-    padding: 50px 0px 0px 0px;
+.cta {
+  padding: 50px 0px 0px 0px;
 }
-.cta-select
-{
-    border: 2px solid #2f3542;
-    background: transparent;            
-    color: #2f3542;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    font-size: 16px;
+.cta-select {
+  border: 2px solid #2f3542;
+  background: transparent;
+  color: #2f3542;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
 }
-.cta-add
-{
-    background-color: #2f3542;
-     width: 150px;
-    height: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    color: white;
-    margin: 30px 0px 0px 30px;
+.cta-add {
+  background-color: #2f3542;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  margin: 30px 0px 0px 30px;
 }
-.cover
-{
-    flex: 1;
+.cover {
+  flex: 1;
 }
-.cover img 
-{
-    height: 70vh;
-    margin-left: 150px;
-    filter: drop-shadow(0px 5px 3px black);
-    animation: drop 1.5s ease;
+.cover img {
+  height: 70vh;
+  margin-left: 150px;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
-.laptop-select
-{
-    width: 15%;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    right: 20%;
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 20%;
 }
-.cover_macbook
-{
-     flex: 1;
+.cover_macbook {
+  flex: 1;
 }
-.cover_macbook img
-{
-     height: 50vh;
-    filter: drop-shadow(0px 5px 3px black);
-    animation: drop 1.5s ease;
+.cover_macbook img {
+  height: 50vh;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
 
+.regulamin {
+  background: #f1f2f6;
+  background-size: cover;
+  font-family: "Arial";
+  color: black;
+  margin: 0;
 
-.regulamin{
-
-background: #f1f2f6;
-background-size: cover;
-font-family: 'Arial';
-color: black;
-margin: 0;
-    
-    width: 90%;
-    margin: auto;
-  
-    
+  width: 90%;
+  margin: auto;
 }
-
 
 @keyframes drop {
-    0%{
-        opacity: 0;
-        transform: translateY(-80px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-
 @media screen and (max-width: 1024px) {
-    .presentation{
-        flex-direction: column;
-    }
-    .introduction{
-        margin-top: 5vh;
-        text-align: center;
-    }
-    .intro-text h1{
-        font-size: 30px;
-    }
-    .intro-text p{
-        font-size: 18px;
-    }
-    .cta{
-        padding: 10px 0px 0px 0px;
-    }
-    .laptop-select{
-        
-    }
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .laptop-select {
+  }
 }
