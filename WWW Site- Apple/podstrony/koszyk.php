@@ -17,7 +17,7 @@ session_start();
     
  <link rel="icon" href="../Graphic/macbook.png" sizes="16x16">
     
-    <title>Akcesoria</title>
+    <title>Koszyk</title>
 </head>
 
     
@@ -35,26 +35,12 @@ session_start();
             <li><a href="../index.html">Strona Główna</a></li>
             <li><a href="akcesoria.html">Akcesoria</a></li>
             <li><a href="regulamin.html">Regulamin</a></li>
-            <li><a href="koszyk.html"><img src="https://s2.svgbox.net/hero-solid.svg?ic=shopping-cart&color=000" width="25" height="25"></a></li>
+            <li><a href="koszyk.php"><img src="https://s2.svgbox.net/hero-solid.svg?ic=shopping-cart&color=000" width="25" height="25"></a></li>
             </ul>
         </nav>
         
     </div>
 </header>
-    <?php
-    if (isset($_POST['lista'])){
-        if(!empty($_SESSION['koszyk'])){
-            $koszyk = array_unique (
-            array_merge(
-            unseralize($_SESSION['koszyk']),
-                $_POST['lista']
-            )
-            );
-            $_SESSION['koszyk'] = serialize($koszyk);
-        } else {
-            $_SESSION['koszyk'] = serialize($_POST['lista']);
-        }
-        echo "<p>Wybrane produkty zostały umieszczone w koszyku</p>";
-        }
-    ?>
-    </body>
+</head>
+</body>
+</html>
